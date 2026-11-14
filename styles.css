@@ -63,7 +63,7 @@ p { margin: 0 0 1.15rem; }
 .hero-visual { position: relative; max-width: 540px; justify-self: end; }
 .hero-portrait { margin: 0; position: relative; }
 .hero-portrait::before { content: ""; position: absolute; inset: -16px 18px 18px -16px; border: 2px solid var(--gold); z-index: 0; }
-.hero-portrait img { position: relative; z-index: 1; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; box-shadow: var(--shadow); }
+.hero-portrait img { position: relative; z-index: 1; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center center; box-shadow: var(--shadow); }
 .hero-badge { position: absolute; z-index: 3; left: -3rem; bottom: -2.4rem; display: flex; align-items: center; gap: .8rem; width: 240px; padding: .9rem 1rem; background: var(--crimson-dark); color: #fff; box-shadow: var(--shadow); font-size: .82rem; font-weight: 750; line-height: 1.35; }
 .hero-badge svg { flex: 0 0 60px; width: 60px; fill: none; stroke: #ffd66b; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
 .button-row { display: flex; flex-wrap: wrap; gap: .85rem; margin: 1.8rem 0; }
@@ -96,6 +96,9 @@ p { margin: 0 0 1.15rem; }
 .decision-rule { max-width: 900px; margin-top: 1.5rem; background: #fff; border: 1px solid var(--line); }
 .decision-rule summary { cursor: pointer; padding: 1.2rem 1.5rem; color: var(--crimson-dark); font-weight: 850; }
 .decision-rule > div { padding: 0 1.5rem 1rem; }
+.philosophy-link { margin: 1.5rem 0 0; }
+.philosophy-gateway { display: grid; grid-template-columns: 110px 1fr; gap: 2rem; align-items: center; max-width: 920px; padding: 2rem; background: #fff; border-left: 7px solid var(--gold); }
+.gateway-mark { display: grid; place-items: center; width: 96px; height: 96px; border-radius: 50%; background: var(--crimson-dark); color: #fff; font: 700 2rem/1 Georgia, serif; }
 
 .photo-story { display: grid; grid-template-columns: 1.2fr .8fr; align-items: center; gap: clamp(2rem, 7vw, 7rem); }
 .photo-large { margin: 0; }
@@ -147,9 +150,23 @@ figcaption { margin-top: .7rem; color: var(--muted); font-size: .86rem; }
 .site-footer details p { margin-top: .7rem; color: #ccc; }
 
 :focus-visible { outline: 3px solid #f4bc2a; outline-offset: 4px; }
+.accessibility-bar { display:flex; align-items:center; justify-content:flex-end; gap:.8rem; padding:.55rem max(1rem,calc((100vw - var(--max))/2)); background:#28292b; color:#fff; font-size:.82rem; }
+.accessibility-bar label,.speech-controls { display:flex; align-items:center; gap:.4rem; }
+.accessibility-bar select,.accessibility-bar button { min-height:36px; padding:.35rem .55rem; border:1px solid #fff; background:#fff; color:#111; font:inherit; }
+.accessibility-bar button:disabled { opacity:.55; }
+.a11y-title { margin-right:auto; }
+.speech-controls { gap:.3rem; }
+body[data-contrast="soft"] { --ink:#2f3032; --muted:#55514a; --paper:#f7f1e6; --soft:#efe6d7; --warm:#f3e7ce; --line:#c9bfae; }
+body[data-contrast="high"] { --crimson:#ffde00; --crimson-dark:#ffde00; --gold:#ffde00; --ink:#fff; --muted:#fff; --paper:#000; --soft:#111; --warm:#111; --line:#fff; }
+body[data-contrast="high"] .site-header,body[data-contrast="high"] .hero,body[data-contrast="high"] .philosophy,body[data-contrast="high"] .projects,body[data-contrast="high"] .credentials,body[data-contrast="high"] .project-card,body[data-contrast="high"] .credential-grid article,body[data-contrast="high"] .philosophy-gateway,body[data-contrast="high"] .button.secondary { background:#000; color:#fff; }
+body[data-contrast="high"] a { color:#ffde00; }
+body[data-contrast="high"] .button.primary { color:#000; }
+body[data-contrast="high"] .site-footer { border-top:2px solid #fff; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
 
 @media (max-width: 900px) {
+  .accessibility-bar { flex-wrap: wrap; justify-content: flex-start; }
+  .a11y-title { flex-basis: 100%; }
   .menu-button { display: block; }
   .primary-nav { display: none; position: absolute; left: 0; right: 0; top: 74px; flex-direction: column; align-items: stretch; padding: 1rem 1.25rem; background: #fff; border-bottom: 1px solid var(--line); }
   .primary-nav.open { display: flex; }
@@ -164,6 +181,10 @@ figcaption { margin-top: .7rem; color: var(--muted); font-size: .86rem; }
 }
 
 @media (max-width: 620px) {
+  .accessibility-bar label, .speech-controls { width: 100%; }
+  .accessibility-bar select { flex: 1; }
+  .speech-controls button { flex: 1; }
+  .philosophy-gateway { grid-template-columns: 1fr; }
   h1 { font-size: 2.7rem; }
   .brand small { display: none; }
   .philosophy-grid, .project-grid, .credential-grid, .evidence-strip, .impact-notes, .impact-gallery { grid-template-columns: 1fr; }

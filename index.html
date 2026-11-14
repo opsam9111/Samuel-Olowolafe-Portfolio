@@ -6,6 +6,8 @@
   <meta name="description" content="Samuel Olowolafe's professional and academic portfolio in instructional technology, transportation STEM, curriculum design, and K–12 education.">
   <title>Samuel Olowolafe | Instructional Technology and Transportation STEM</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="translations.js" defer></script>
+  <script src="accessibility.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -20,10 +22,9 @@
     <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
       <a href="#top">Home</a>
       <a href="#about">About</a>
-      <a href="#philosophy">Philosophy</a>
+      <a href="#philosophy">My IT Philosophy</a>
       <a href="#projects">Projects</a>
       <a href="#impact">Impact</a>
-      <a href="#ail601">AIL 601</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -85,41 +86,18 @@
 
     <section id="philosophy" class="section-pad philosophy" aria-labelledby="philosophy-title">
       <div class="section-heading">
-        <p class="eyebrow">Philosophy of instructional technology</p>
+        <p class="eyebrow">My IT philosophy</p>
         <h2 id="philosophy-title">Technology earns its place by improving learning</h2>
         <p>I do not begin with a tool. I begin with the learner, the concept, and the barrier that prevents meaningful understanding.</p>
       </div>
-      <div class="philosophy-grid">
-        <article>
-          <span class="number" aria-hidden="true">01</span>
-          <h3>Learning is active and social</h3>
-          <p>Learners build understanding by connecting new information with prior knowledge, participating actively, explaining ideas, learning with others, receiving timely feedback, and gradually taking responsibility for their learning.</p>
-        </article>
-        <article>
-          <span class="number" aria-hidden="true">02</span>
-          <h3>Design must respond to variability</h3>
-          <p>Learners differ in prior knowledge, confidence, language, interests, access, and pace. Instruction should offer meaningful ways to engage, access information, and demonstrate understanding without lowering the learning goal.</p>
-        </article>
-        <article>
-          <span class="number" aria-hidden="true">03</span>
-          <h3>Technology must solve a real problem</h3>
-          <p>A tool is valuable when it removes a barrier, represents an abstract idea, supports practice or collaboration, makes student thinking visible, or provides an accessible way to show learning.</p>
-        </article>
-        <article>
-          <span class="number" aria-hidden="true">04</span>
-          <h3>Evidence guides continuation</h3>
-          <p>I separate confidence, repeated use, and evidence of student learning. A tool should be adopted, adapted, supported further, or discontinued according to what the evidence shows.</p>
-        </article>
-      </div>
-      <details class="decision-rule">
-        <summary>My instructional technology decision rule</summary>
+      <div class="philosophy-gateway">
+        <div aria-hidden="true" class="gateway-mark">IT</div>
         <div>
-          <p><strong>Adopt</strong> when a tool addresses a verified learning need, fits the content and strategy, is accessible, and produces promising learning evidence in a pilot.</p>
-          <p><strong>Adapt</strong> when learning is promising but barriers remain in instructions, cognitive load, access, culture, assessment, or accessibility.</p>
-          <p><strong>Support further</strong> when the tool is instructionally appropriate but confidence, infrastructure, repeated use, or implementation support is weak.</p>
-          <p><strong>Discontinue</strong> when repeated use does not improve learning, serious ethical or access problems remain, or a simpler alternative works equally well or better.</p>
+          <h3>My complete philosophy and its evidence</h3>
+          <p>My academic portfolio explains how experience, learning theory, technology-integration frameworks, accessibility, ethics, and evidence shape my decisions. It also presents three interactive resources that show how this philosophy developed through design, feedback, and revision.</p>
+          <a class="button secondary" href="https://opsam9111.github.io/IT-Philosophy/philosophy.html" target="_blank" rel="noopener">Read my Philosophy of Instructional Technology<span class="sr-only"> (opens in a new tab)</span></a>
         </div>
-      </details>
+      </div>
     </section>
 
     <section class="photo-story section-pad" aria-labelledby="practice-title">
@@ -137,9 +115,9 @@
 
     <section id="projects" class="section-pad projects" aria-labelledby="projects-title">
       <div class="section-heading">
-        <p class="eyebrow">Selected design projects</p>
-        <h2 id="projects-title">Interactive resources shaped by learning needs</h2>
-        <p>Each project begins with a clear learning problem, combines theory with practical design decisions, and includes accessibility or low-resource considerations.</p>
+        <p class="eyebrow">Selected professional projects</p>
+        <h2 id="projects-title">Transportation STEM, curriculum, and outreach</h2>
+        <p>These projects connect my teaching background with transportation research, curriculum development, physical computing, and community engagement.</p>
       </div>
       <div class="project-grid">
         <article class="project-card featured">
@@ -151,24 +129,9 @@
           </ul>
           <span class="status">Portfolio case study in development</span>
         </article>
-        <article class="project-card">
-          <div class="project-tag">Module 3 · OER Remix</div>
-          <h3>Crop Resilience Challenge</h3>
-          <p>An AI-enhanced interactive resource remixed from openly licensed content to support decisions about crop adaptation and drought resilience.</p>
-          <a href="https://opsam9111.github.io/crop-resilience-challenge/" target="_blank" rel="noopener">Open the resource<span class="sr-only"> (opens in a new tab)</span></a>
-        </article>
-        <article class="project-card">
-          <div class="project-tag">Module 4 · Framework Application</div>
-          <h3>Boyle's Law Design Lab</h3>
-          <p>An accessible investigation that applies TPACK, SAMR, and UDL to help beginning science learners explain the inverse pressure–volume relationship.</p>
-          <a href="https://opsam9111.github.io/boyles-law-design-lab/" target="_blank" rel="noopener">Open the resource<span class="sr-only"> (opens in a new tab)</span></a>
-        </article>
-        <article class="project-card">
-          <div class="project-tag">Module 5 · Technology Adoption</div>
-          <h3>Purposeful AI Readiness Lab</h3>
-          <p>A UTAUT-informed diagnostic resource that helps Nigerian secondary schools identify practical support needs for responsible generative AI adoption.</p>
-          <a href="https://opsam9111.github.io/purposeful-ai-readiness-lab/#diagnose" target="_blank" rel="noopener">Open the resource<span class="sr-only"> (opens in a new tab)</span></a>
-        </article>
+        <article class="project-card"><div class="project-tag">Curriculum Development</div><h3>Digital Transportation Learning Experiences</h3><p>Curriculum work that connects sensing, data, communication, algorithms, decision-making, and physical movement with K–12 mathematics, science, computing, and transportation contexts.</p><span class="status">Curriculum development in progress</span></article>
+        <article class="project-card"><div class="project-tag">Transportation Safety Outreach</div><h3>Walk Smart Alabama</h3><p>Interactive activities and conversations that help children, families, and communities connect pedestrian-safety principles with decisions they make around roadways and intersections.</p><span class="status">Community education and outreach</span></article>
+        <article class="project-card"><div class="project-tag">Educational Service</div><h3>OPSAM Educational Foundation</h3><p>Educational support, mentoring, learning opportunities, and exposure activities created to help young people pursue academic achievement and future possibilities.</p><a href="https://sites.google.com/view/opsameducationalfoundation/home" target="_blank" rel="noopener">Visit the foundation<span class="sr-only"> (opens in a new tab)</span></a></article>
       </div>
     </section>
 
@@ -206,41 +169,6 @@
           <h3>Teaching impact</h3>
           <p>One of my proudest outcomes came after three years of work with senior secondary students: many achieved A grades across Mathematics, Further Mathematics, and Physics in 2018. Their continued progress remains more meaningful to me than an individual award.</p>
         </article>
-      </div>
-    </section>
-
-    <section id="ail601" class="section-pad ail" aria-labelledby="ail-title">
-      <div class="section-heading">
-        <p class="eyebrow">AIL 601 academic portfolio</p>
-        <h2 id="ail-title">Evidence of an evolving instructional technology philosophy</h2>
-        <p>The sequence below shows how my thinking developed from learning theory, through framework-informed design, to technology adoption and a coherent philosophy of practice.</p>
-      </div>
-      <ol class="learning-path">
-        <li>
-          <span>Module 3</span>
-          <div><h3>Learning and instructional theories</h3><p>I connected behaviorism, cognitivism, constructivism, sociocultural theory, motivational theory, and online learning theories to my experience as a mathematics and physics teacher.</p></div>
-        </li>
-        <li>
-          <span>Module 3</span>
-          <div><h3>Crop Resilience Challenge</h3><p>I remixed an OER into an interactive learning experience and documented theory, UDL, responsible AI, accessibility, verification, and licensing decisions.</p><a href="https://opsam9111.github.io/crop-resilience-challenge/" target="_blank" rel="noopener">View artifact<span class="sr-only"> (opens in a new tab)</span></a></div>
-        </li>
-        <li>
-          <span>Module 4</span>
-          <div><h3>Boyle's Law Design Lab</h3><p>I used TPACK to select technology, SAMR to judge the degree of task change, and UDL to maintain a common conceptual target while reducing barriers.</p><a href="https://opsam9111.github.io/boyles-law-design-lab/" target="_blank" rel="noopener">View artifact<span class="sr-only"> (opens in a new tab)</span></a></div>
-        </li>
-        <li>
-          <span>Module 5</span>
-          <div><h3>Purposeful AI Readiness Lab</h3><p>I applied UTAUT to distinguish technology acceptance from sustained use and designed support recommendations around performance, effort, social influence, and facilitating conditions.</p><a href="https://opsam9111.github.io/purposeful-ai-readiness-lab/#diagnose" target="_blank" rel="noopener">View artifact<span class="sr-only"> (opens in a new tab)</span></a></div>
-        </li>
-        <li>
-          <span>Module 6</span>
-          <div><h3>Philosophy of Instructional Technology</h3><p>I synthesized my teaching, leadership, design, and research experiences into an evidence-driven philosophy. The central lesson is simple: technology should be thoughtfully designed, implemented, and evaluated—not selected because it is new.</p></div>
-        </li>
-      </ol>
-      <div class="portfolio-narrative">
-        <h3>Portfolio narrative</h3>
-        <p>These artifacts show a clear change in my thinking. I began with a strong belief in active learning, conceptual understanding, practice, collaboration, feedback, and learner accessibility. The course helped me name the theories behind those beliefs and examine their limitations. It also helped me become more deliberate about choosing technology through TPACK, evaluating task change through SAMR, designing for learner variability through UDL, and planning adoption through models such as UTAUT.</p>
-        <p>My work now treats technology integration as both an instructional and implementation decision. A useful tool must support the learning goal, be usable within the learner's context, respect ethical and accessibility requirements, and produce evidence that justifies its continued use.</p>
       </div>
     </section>
 

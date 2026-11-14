@@ -1,6 +1,6 @@
 # Samuel Olowolafe Portfolio
 
-This is a static professional and academic portfolio prepared for GitHub Pages.
+This is Samuel Olowolafe's professional portfolio prepared for GitHub Pages. The separate AIL 601 academic portfolio is linked through the Philosophy of Instructional Technology section.
 
 ## Publish on GitHub Pages
 
@@ -10,6 +10,8 @@ This is a static professional and academic portfolio prepared for GitHub Pages.
 4. Under **Build and deployment**, choose **Deploy from a branch**.
 5. Select the `main` branch and `/ (root)`, then save.
 6. After GitHub completes deployment, visit `https://opsam9111.github.io/Samuel-Olowolafe-Portfolio/`.
+
+The upload must include `translations.js` and `accessibility.js`. These files provide English, French, and Spanish display options, standard/soft/high-contrast modes, and browser-based read-aloud controls. Available speech voices depend on the visitor's browser and operating system.
 
 ## Before publishing
 
