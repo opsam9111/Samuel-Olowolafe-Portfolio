@@ -4,12 +4,12 @@ This is a static professional and academic portfolio prepared for GitHub Pages.
 
 ## Publish on GitHub Pages
 
-1. Create a public repository named `opsam9111.github.io` under the `opsam9111` GitHub account. If that repository already exists, open it instead.
+1. Open the existing public repository named `Samuel-Olowolafe-Portfolio` under the `opsam9111` GitHub account.
 2. Upload every file and folder from this package to the repository root. `index.html` must remain at the root, not inside another folder.
 3. Open **Settings → Pages**.
 4. Under **Build and deployment**, choose **Deploy from a branch**.
 5. Select the `main` branch and `/ (root)`, then save.
-6. After GitHub completes deployment, visit `https://opsam9111.github.io/`.
+6. After GitHub completes deployment, visit `https://opsam9111.github.io/Samuel-Olowolafe-Portfolio/`.
 
 ## Before publishing
 
