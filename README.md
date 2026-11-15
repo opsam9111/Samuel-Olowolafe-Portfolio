@@ -2,6 +2,8 @@
 
 This is Samuel Olowolafe's professional portfolio prepared for GitHub Pages. The separate AIL 601 academic portfolio is linked through the Philosophy of Instructional Technology section.
 
+The portfolio includes a dedicated `engagement.html` page for outreach, conference presentations and professional learning, and publications or scholarship. New records can be added to the relevant subsection without expanding the homepage.
+
 ## Publish on GitHub Pages
 
 1. Open the existing public repository named `Samuel-Olowolafe-Portfolio` under the `opsam9111` GitHub account.
